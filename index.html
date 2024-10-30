@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+            <style>
+                
+                .my-button {
+            background-color: #4caf4f77; 
+            color: white;              
+            border: none;              
+            cursor: pointer;       
+            padding: 12px 24px;    
+            transition: background-color 0.3s ease; 
+            margin-top: 30px;
+        }
+
+        
+        .my-button:hover {
+            background-color: #dbf113;
+        }
+
+        
+
+
+        body {
+        margin: 0;
+        padding: 0;
+      }
+    
+      .footer {
+        background-color: #d7d3d3;
+        color: rgb(18, 18, 18);
+        padding: 40px 0;
+      }
+    
+      .footer a {
+        color: #121111;
+        text-decoration: none;
+      }
+    
+      .round-container {
+          width: 150px;
+          height: 150px;
+          background-color: #3794d2;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 1.5rem;
+          text-align: center;
+          margin: 50px auto;
+      }
+    
+      
+    
+      
+    
+      .footer .btn {
+        background-color: #ff5a5f;
+        color: white;
+        border-radius: 0;
+      }
+
+
+            </style>
+     <style>
+                .m-button {
+            background-color:#a80d44; 
+            color: rgb(255, 255, 255);              
+            border: none;              
+            cursor: pointer;       
+            padding: 12px 24px;    
+            transition: background-color 0.3s ease; 
+            margin-top: 30px;
+        }
+        .m-button:hover {
+            background-color: #dbf113;
+        }
+
+        .container-fluid:hover {
+            background-color: #dbf113;  
+        }
+
+            </style>
+            <style>
+              .image-container {
+                  position: relative;
+                  width: 300px; 
+              }
+              
+              .default-img {
+                  display: block;
+                  width: 100%;
+              }
+              
+              .hover-img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  opacity: 0;
+                  transition: opacity 0.3s;
+              }
+              
+              .image-container:hover .default-img {
+                  opacity: 0;
+              }
+              
+              .image-container:hover .hover-img {
+                  opacity: 1;
+              }
+              </style>
+              <style>
+                
+                .hover-box {
+                  width: 300px;
+                  height: 200px;
+                  background-image: url('light.webp');
+                  background-size: cover;
+                  background-position: center;
+                  transition: background-image 0.3s ease;
+                }
+            
+                
+                .hover-box:hover {
+                  background-image: url('dark.webp');
+                }
+              </style>
+              <style>
+                #text1 {
+                    display: none; 
+                }
+                #image1 {
+                    display: block; 
+                    width: 300px; 
+                }
+                #text2 {
+                    display: none; 
+                }
+                #image2 {
+                    display: block; 
+                    width: 300px; 
+                }
+                #text3 {
+                    display: none; 
+                }
+                #image3 {
+                    display: block; 
+                    width: 300px; 
+                }
+                #text4 {
+                    display: none; 
+                }
+                #image4 {
+                    display: block; 
+                    width: 300px;
+                }
+                #text5 {
+                    display: none; 
+                }
+                #image5 {
+                    display: block; 
+                    width: 300px; 
+                }
+                #text6 {
+                    display: none; 
+                }
+                #image6 {
+                    display: block;
+                    width: 300px; 
+                }
+            </style>
+    </head>
+
+    <body>
+        <div class="container" >
+
+
+             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid" style="background-color: #1c9ebe;color: white;height: 50px;">
+                  <a class="navbar-brand" href="#"><img src="logo2 (1).png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="color: white;">
+                    <ul class="navbar-nav" style="padding-left: 30px;">
+                        
+                      <li class="nav-item"  >
+                        <a class="nav-link active"style="color: white; "  aria-current="page" href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i>   Home</a>
+                      </li>
+                      
+                      
+                      
+                      <li class="nav-item" >
+                        <a class="nav-link"  style="color: white; " href="#"><i class="fa-solid fa-eject" style="color: #fcfcfd;"></i>  About Us</a>
+                      </li>
+                      
+                      
+                      <li class="nav-item" >
+                        <a class="nav-link"  style="color: white; " href="#"><i class="fa-solid fa-phone" style="color: #fcfcfd;"></i>  Contact Us</a>
+                      </li>
+                      
+                      
+                      <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                          <li><a class="dropdown-item" href="#">Web Development</a></li>
+                          <li><a class="dropdown-item" href="#">Social Media Promotion</a></li>
+                          <li><a class="dropdown-item" href="#">Branding</a></li>
+                          <li><a class="dropdown-item" href="#">Package Designing</a></li>
+                          <li><a class="dropdown-item" href="#">E-Commerce Development</a></li>
+                          <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+
+
+
+                        </ul>
+                      </li>
+
+                      
+
+                      <li class="nav-item ml-30" style="margin-top :4px; color: white;" >
+                        <a class="nav-link" href="#" style="color: white;"> 
+                          <i class="fa-brands fa-whatsapp fa-bounce" style="color: #149039; size: 5px;"></i> 7012123250
+                        </a>
+                        
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav> 
+              
+
+
+              <div class="hover-box " style=" size:100px;background-size: cover; width: 100%;height: 400px;">
+               
+                
+              </div>
+
+
+
+            
+              
+<div class="container "  style="height: 600px; color:#0a1053;background-color: #1c9ebe;background-color: #eef4f4; padding: 20px; transition: background-color 0.3s;" 
+onmouseout="this.style.backgroundColor='#eef4f4'" 
+onmouseover="this.style.backgroundColor='#1c9ebe'">
+<center><img src="logo2 (1).png" alt="" class="mt-3"></center>
+    <center style="padding-top: 80px;" ><h1>Pro Element Creatives</h1>
+        <h2>Website Development And Graphic Design Company</h2><br>
+        <h6>We are one of the leading advertising agency and design space with a bunch of creative and passionate team born in 2015. We are a combo of old and new, real and virtual, large and small, unique and extraordinary. We strongly believe in quality more than quantity. We create or recreate a fresh and attractive identity for your product, services, and brands for the right audience.
+        </h6> 
+    <button class="m-button" style="width: 110px; height: 40px;background-color: #a80d44;background-color: rgb(220, 142, 8); transition: background-color 0.3s;" 
+    onmouseover="this.style.backgroundColor='rgb(220, 142, 8)'" 
+    onmouseout="this.style.backgroundColor='#a80d44'" >SERVICES</button>
+    <a href=""></a> <a href=""></a>
+    <button  class="m-button" style="width: 110px; height: 40px;background-color: #a80d44;background-color: rgb(220, 142, 8); transition: background-color 0.3s;" 
+    onmouseover="this.style.backgroundColor='rgb(220, 142, 8)'" 
+    onmouseout="this.style.backgroundColor='#a80d44'" >WORKS</button>
+    </center>
+
+
+</div>
+
+
+<div style="background-image: url(blue.jpg);width:100%; height: 400px; background-repeat: no-repeat;background-size: cover;">
+
+    <div  ><h1  style="color: #0a1053; padding-top: 10px;">About Pro Element Creatives</h1>
+        <h3 style="color: #0a1053;">WE Are The One...!</h3>
+        <p style="text-align: justify;">We are one of the leading advertising agency and design space with a bunch of creative <br>and passionate team born in 2015. We are a combo of old and new, real and virtual,<br> large and small, unique and extraordinary. We strongly believe in quality more than <br>
+             quantity. We create or recreate a fresh and attractive identity for your product, services <br> and brands for the right audience. We are the one who is an unlimited and wide <br>
+              variety in the types of companies that may be big or small. WE are the one who with  <br>100+ satisfied clients across worldwide.</p></div>
+</div>
+
+
+<br>
+
+<div class="row" style="width: 100%; ">
+    <div class="col-2">
+      
+
+
+
+
+    </div>
+
+
+    <div class="col-2">
+      <div class="card"
+      style="background-color:  rgb(23, 193, 245);  height:220px ;">
+      
+      
+          
+          <div id="container" onmouseover="showText1()" onmouseout="showImage1()">
+            <center><p id="text1"><b>Branding</b><br> We are the masters in branding and rebranding products and services.</p></center>
+            <img id="image1" src="brand.png" alt="" style="height:220px ;width:100%">
+        </div>
+        
+        <script>
+            function showText1() {
+                document.getElementById("text1").style.display = "block"; 
+                document.getElementById("image1").style.display = "none"; 
+            }
+        
+            function showImage1() {
+                document.getElementById("text1").style.display = "none";
+                document.getElementById("image1").style.display = "block"; 
+            }
+        </script>
+             
+      
+  </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="col-2">
+        <div class="card"
+            style="background-color:  rgb(23, 193, 245); height: 220px;">
+            
+            
+            
+            <div id="container" onmouseover="showText2()" onmouseout="showImage2()">
+              <center><p id="text2"><b>Web Development</b><br> Your website is something that makes an overall impact on your products and services..</p></center>
+              <img id="image2" src="web.png" alt=""style="height:220px ;width:100%">
+          </div>
+          
+          <script>
+              function showText2() {
+                  document.getElementById("text2").style.display = "block"; 
+                  document.getElementById("image2").style.display = "none"; 
+              }
+          
+              function showImage2() {
+                  document.getElementById("text2").style.display = "none";
+                  document.getElementById("image2").style.display = "block"; 
+              }
+          </script>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="card"
+            style="background-color:  rgb(23, 193, 245); height:220px;">
+            
+           
+            
+           <div id="container" onmouseover="showText3()" onmouseout="showImage3()">
+            <center><p id="text3"><b>Graphic Designing</b><br> It is the art and practice of planning and projecting ideas and experiences with visual and textual content..</p></center>
+            <img src="gr.png"  id="image3" alt="" style="height:220px ;width:100%">
+        </div>
+        
+        <script>
+            function showText3() {
+                document.getElementById("text3").style.display = "block"; 
+                document.getElementById("image3").style.display = "none"; 
+            }
+        
+            function showImage3() {
+                document.getElementById("text3").style.display = "none";
+                document.getElementById("image3").style.display = "block"; 
+            }
+        </script>
+               
+        </div>
+    </div>
+    <div class="col-2">
+        
+    </div>
+    <div class="col-2">
+       
+    </div>
+</div>
+<br>
+
+<div class="row" style="width: 100%; ">
+  <div class="col-2">
+      
+  </div>
+
+  <div class="col-2">
+    
+</div>
+
+
+<div class="col-2">
+  <div class="card"
+      style="background-color:  rgb(23, 193, 245);  height:220px ;">
+      
+      
+          
+     
+          <div id="container" onmouseover="showText4()" onmouseout="showImage4()">
+            <center><p id="text4"><b>Social Media Promotion</b><br> In this twenty-first century. Social media are considered as the fifth estate..</p></center>
+            <img src="so.png" id="image4"  alt="" style="height:220px ;width:100%">
+        </div>
+        
+        <script>
+            function showText4() {
+                document.getElementById("text4").style.display = "block"; 
+                document.getElementById("image4").style.display = "none"; 
+            }
+        
+            function showImage4() {
+                document.getElementById("text4").style.display = "none";
+                document.getElementById("image4").style.display = "block"; 
+            }
+        </script>
+  </div>
+</div>
+
+
+
+<div class="col-2">
+  <div class="card"
+      style="background-color:  rgb(23, 193, 245);  height:220px ;">
+      
+      
+          
+     
+          <div id="container" onmouseover="showText5()" onmouseout="showImage5()">
+            <center><p id="text5"><b>UI/UX Design</b><br>UX design is the process of designing a better digital experience for the users. Ui creating interface in software or..</p></center>
+            <img src="uiux.png"  id="image5" alt="" style="height:220px ;width:100%">
+        </div>
+        
+        <script>
+            function showText5() {
+                document.getElementById("text5").style.display = "block"; 
+                document.getElementById("image5").style.display = "none"; 
+            }
+        
+            function showImage5() {
+                document.getElementById("text5").style.display = "none";
+                document.getElementById("image5").style.display = "block"; 
+            }
+        </script>
+  </div>
+</div>
+
+<div class="col-2">
+  <div class="card"
+  style="background-color:  rgb(23, 193, 245); height:220px;color: white;">
+  
+  
+  
+  <div id="container" onmouseover="showText6()" onmouseout="showImage6()">
+    <center><p id="text6" style="color: white;"><b >E-commerece development</b> <br> Ecommerce is commonly known as electronic commerce This is on eof the besy service..</p></center>
+    <img src="ec.png" id="image6"  alt="" style="height:220px ;width:100%">
+</div>
+
+<script>
+    function showText6() {
+        document.getElementById("text6").style.display = "block"; 
+        document.getElementById("image6").style.display = "none"; 
+    }
+
+    function showImage6() {
+        document.getElementById("text6").style.display = "none";
+        document.getElementById("image6").style.display = "block"; 
+    }
+</script>
+      
+</div>
+</div>
+
+<div class="col-2">
+  
+</div>
+
+
+
+
+  </div>
+<br>
+<center><h2 style="color: #0a1053;">Industry Expertises</h2></center>
+<center><div class="container">
+  <div class="row">
+  
+  <div class="col-2">
+    <div class="card " style="height: 120px;width: 800px;background-color: #1c9ebe29;margin-left: 280px;">
+      
+        <img src="Healthcare.png" alt="" style="height: 80px; width: 250px; margin-left: 280px; margin-top: 5px;">
+      <h6 style="margin-left: 360px;">HEALTHCARE</h6>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <div class="card" style="height: 120px;width: 600px;background-color: #1c9ebe29;margin-left: 380px; margin-top: 5px;">
+        <img src="Telecommunications.png" alt="" style="height: 80px; width: 250px; margin-left: 190px;">
+      <h6 style="margin-left: 230px;">TELECOMMUNICATIONS</h6>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row"><div class="col-2">
+    
+      <div class="card" style="height: 120px;width: 800px;background-color: #1c9ebe29;margin-left: 280px; margin-top: 5px;">
+        <img src="Manufacturing.png" alt="" style="height: 80px; width: 250px; margin-left: 280px;">
+      <h6 style="margin-left: 340px;">MANUFACTURING</h6>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row"><div class="col-2">
+    <div class="card" style="height: 120px;width: 600px;background-color: #1c9ebe29;margin-left: 380px; margin-top: 5px;">
+      <img src="logist.png" alt="" style="height: 80px; width: 250px; margin-left: 190px;">
+    <h6 style="margin-left: 270px;">LOGISTICS</h6>
+    </div>
+  </div></div>
+  
+  <div class="row"><div class="col-2">
+    <div class="card" style="height: 120px;width: 800px;background-color: #1c9ebe29;margin-left: 280px; margin-top: 5px;">
+      <img src="fmcg.png" alt="" style="height: 80px; width: 250px; margin-left: 280px;">
+    <h6 style="margin-left: 390px;">FMCG</h6>
+    </div>
+  </div></div>
+  
+  <div class="row"><div class="col-2">
+    <div class="card" style="height: 120px;width: 600px;background-color: #1c9ebe29;margin-left: 380px; margin-top: 5px;">
+      <img src="edu.png" alt="" style="height: 80px; width: 250px; margin-left: 190px;">
+    <h6 style="margin-left: 270px;">EDUCATION</h6>
+    </div>
+  </div></div>
+</div>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="container"  style="background-color: rgb(240, 233, 233);height: 1100px;"><br>
+    <center><h1 style="color: rgb(4, 3, 42);">Why choose us?</h1>
+    <h6 style="color: rgb(4,3,42);">We create or recreate a fresh and attractive identity for your product, services, and brands for the right audience. We are the one who is an unlimited and wide variety in the types of companies that may be big or small. We are the one who with 100+ satisfied clients across worldwide.</h6>
+    <div class="round-container">
+        <h2 style="color: white;">01</h2>
+      </div>
+        <div class="container w-50 h-50">
+          <h3 style="color: rgb(4,3,42);">Professional Web Developers</h3>
+          <h5 style="color: rgb(4,3,42);">We are committed in perfecting the technological advances in web development  and services.</h5>
+      </div></center>
+  
+
+    <center><div class="round-container">
+      <h2  style="color: white;">02</h2>
+    </div>
+    <div class="container w-50 h-50">
+      <h3 style="color:rgb(4,3,42);"> Creative Designing</h3>
+      <h5 style="color: rgb(4,3,42);">We strongly believe in quality more than quantity. We create or recreate a fresh and attractive identity for your product, services, and brands for the right audience.</h5>
+  </div></center>
+
+
+
+</div>
+
+
+
+
+                 <div class="footer" style="height: 450px;">
+                    <div class="container mt-3">
+                      <div class="row">
+                        
+                        <div class="col-md-3" style="padding-left: 60px;">
+                          <h5 class="heading">Our Services</h5>
+                          <ul class="list-unstyled">
+                            
+                            <li href="#">Graphic Designing</li>
+                            <li href="#">Web Development</li>
+                            <li href="#">Social Media Promotion</li>
+                            <li href="#">Branding</li>
+                            <li href="#">Package Designing</li>
+                            <li href="#">E-Commerce Development</li>
+                            <li href="#">UI/UX Design</li></b>
+                          </ul>
+                        </div >
+                        
+                        <div class="col-md-3">
+                            <h6>Pro-Element  PVT LTD</h6>
+                            <p>Kakkassery,Kakkassery P.O<br>
+                              Malappuram, Kerala, India - 672 014
+                    </p>
+                            <p>Email us: bandcwebdevelop@gmail.com</p>
+                            <ul class="list-unstyled">
+                            
+                                <a href="#"><i class="fa-brands fa-facebook" style="color: #1d7cca;"></i></a>
+                                <a href=""></a>
+                                <a href="#"><i class="fa-brands fa-twitter" style="color: #2430bd;"></i></a>
+                                <a href=""></a>
+                                <a href="#"><i class="fa-brands fa-linkedin" style="color: #1d7cca;"></i></a>
+                                
+                                <a href="#"><i class="fa-brands fa-instagram" style="color: #a80d44;"></i></a>
+                              </ul>
+                        </div>
+                        <div class="col-md-3" style="padding-left: 80px;">
+                            <h5 class="heading">Know More</h5>
+                          <ul class="list-unstyled">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li> 
+                            <li><a href="#">Careers</a></li> 
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                  
+                          
+                          
+                        </div>
+                        
+                        
+                        <div class="col-md-3">
+                          <h5 class="heading">Corporate</h5>
+                          <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                          </ul>
+                  
+                          <h5 class="heading mt-4">Let’s Stay in Touch!</h5>
+                          <form>
+                            <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Enter email address">
+                              <button class="btn" type="submit">→</button>
+                            </div>
+                            <small>We Never Spam You! 100% Privacy.</small>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+        
+                  
+                  
+                  
+                  <div >
+                    <hr style="color: black;">
+                    <center>&copy; 2024 PRO-ELEMENT PVT LTD. All Rights Reserved</center>
+                    
+                    
+                    </div>
+
+                <br><br><br>
+            
+
+        </div>
+      
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
